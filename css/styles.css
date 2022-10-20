@@ -109,7 +109,7 @@ header {
 
 .contacts {
   display: flex;
-  width: 304px;
+  width: 333px;
   justify-content: space-between;
   margin-left: auto;
   padding-left: 0;
@@ -160,7 +160,8 @@ header {
   color: #757575;
   text-decoration: none;
 
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .link-contacts:hover,
@@ -172,9 +173,37 @@ header {
   color: #2196F3;
 }
 
+.icon-envelope {
+  fill: #757575;
+
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  fill:#757575;
+
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.item-contact:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon-envelope:hover, .icon-envelope:focus {
+  fill: var(--hoverfocus-text-color);
+}
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+  fill: var(--hoverfocus-text-color);
+}
+
 /*Заказ услуг - главный заголовок*/
 .section-one {
-  background: var(--first-background-color);
+  background: #C4C4C4;
   text-align: center;
 
   padding-top: 200px;
