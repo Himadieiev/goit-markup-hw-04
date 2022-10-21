@@ -4,7 +4,6 @@
   --header-background-color: #FFFFFF;
   --first-background-color: #2F303A;
   --second-background-color: #F5F4FA;
-  /* --third-background-color: #F5F5F5; */
   --hoverfocus-text-color: #2196F3;
   --text-color: #FFFFFF;
 }
@@ -176,16 +175,12 @@ header {
 .icon-envelope {
   fill: #757575;
 
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
 }
 
 .icon-smartphone {
   fill:#757575;
 
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
 }
 
@@ -203,11 +198,22 @@ header {
 
 /*Заказ услуг - главный заголовок*/
 .section-one {
+  width: 1600px;
+  height: 600px;
   background: #C4C4C4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url(../images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   text-align: center;
 
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main > .section-one {
@@ -215,7 +221,6 @@ main > .section-one {
 }
 
 .main-title {
-  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -259,7 +264,7 @@ main > .section-one {
 
 .feature>.item {
   width: 270px;
-  height: 98px;
+  height: 248px;
 }
 
 .feature>.item:not(:last-child) {
@@ -273,11 +278,21 @@ main > .section-one {
   text-transform: uppercase;
 
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .text-two {
   font-size: 14px;
   line-height: 1.71;
+}
+
+.icon-antenna, .icon-clock, .icon-diagram, .icon-astronaut {
+  margin: 25px 100px;
+}
+
+.bg-icon {
+  background: #F5F4FA;
+  border-radius: 4px;
 }
 
 /*Чем мы занимаемся*/
@@ -312,7 +327,7 @@ main > .section-one {
 
 .team-photo {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .section-four {
@@ -334,6 +349,68 @@ main > .section-one {
   line-height: 1.18;
   text-align: center;
 }
+
+.link-social {
+  text-decoration: none;
+}
+
+.item-social {
+  background: #FFFFFF;
+}
+
+.group-social {
+  display: flex;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+
+
+/* Постоянные клиенты */
+.section-five {
+  padding-top: 58px;
+  padding-bottom: 94px;
+}
+
+.list-clients {
+  display: flex;
+  margin-top: 50px;
+}
+
+.clients {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.item-clients:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon-client1, .icon-client2, .icon-client3, .icon-client4, .icon-client5, .icon-client6 {
+  margin: 16px 32px;
+  fill:#AFB1B8;
+}
+
+/* .icon-client1:hover, .icon-client1:focus {
+  fill: #2196F3;
+} */
+
+/* .item-clients:hover {
+  fill: #2196F3;
+}
+
+.link-clients:hover {
+  fill:#2196F3
+} */
+
+/* .item.link-clients:hover {
+  color:#2196F3;
+} */
 
 /* Футер - общий для всех! */
 .footer {
@@ -401,6 +478,38 @@ address {
 .tel:hover,
 .tel:focus {
   color: var(--hoverfocus-text-color);
+}
+
+.address-join {
+  display: flex;
+}
+
+.logo-address:not(:last-child) {
+  margin-right: 70px;
+  width: 231px;
+}
+
+.text-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  margin-bottom: 20px;
+}
+
+.social-footer {
+  display: flex;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.join-social {
+  padding-top: 12px;
 }
 
 /* Страница 2 - Портфолио */
@@ -472,4 +581,8 @@ address {
 .text.portfolio {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.item-portfolio {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
