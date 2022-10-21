@@ -161,10 +161,13 @@ header {
 
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-contacts:hover,
 .link-contacts:focus {
+  fill:#2196F3;
   color: var(--hoverfocus-text-color);
 }
 
@@ -173,13 +176,13 @@ header {
 }
 
 .icon-envelope {
-  fill: #757575;
+  fill: currentColor;
 
   margin-right: 10px;
 }
 
 .icon-smartphone {
-  fill:#757575;
+  fill: currentColor;
 
   margin-right: 10px;
 }
@@ -188,9 +191,6 @@ header {
   margin-right: 30px;
 }
 
-.icon-envelope:hover, .icon-envelope:focus {
-  fill: var(--hoverfocus-text-color);
-}
 .icon-smartphone:hover,
 .icon-smartphone:focus {
   fill: var(--hoverfocus-text-color);
@@ -317,7 +317,6 @@ main > .section-one {
 
 .team>.item:not(:last-child) {
   margin-right: 30px;
-  
 }
 
 .team > .item {
@@ -583,6 +582,6 @@ address {
   line-height: 1.88;
 }
 
-.item-portfolio {
+.item-portfolio:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
