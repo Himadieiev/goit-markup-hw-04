@@ -42,7 +42,7 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, p, {
+h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
@@ -167,7 +167,7 @@ header {
 
 .link-contacts:hover,
 .link-contacts:focus {
-  fill:#2196F3;
+  fill:var(--hoverfocus-text-color);
   color: var(--hoverfocus-text-color);
 }
 
@@ -207,9 +207,7 @@ header {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-
   text-align: center;
-
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -351,6 +349,19 @@ main > .section-one {
 
 .link-social {
   text-decoration: none;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid #FFFFFF;
+  fill:#AFB1B8;
+}
+
+.link-social:hover, .link-social:focus {
+  fill:#FFFFFF;
+  background: var(--hoverfocus-text-color);
 }
 
 .item-social {
@@ -366,8 +377,6 @@ main > .section-one {
   justify-content: space-between;
 }
 
-
-
 /* Постоянные клиенты */
 .section-five {
   padding-top: 58px;
@@ -379,37 +388,25 @@ main > .section-one {
   margin-top: 50px;
 }
 
-.clients {
+.link-clients {
   width: 170px;
   height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  fill:#AFB1B8;
+}
+
+.link-clients:hover, .link-clients:focus {
+  fill: var(--hoverfocus-text-color);
+  border: 1px solid var(--hoverfocus-text-color);
 }
 
 .item-clients:not(:last-child) {
   margin-right: 30px;
 }
-
-.icon-client1, .icon-client2, .icon-client3, .icon-client4, .icon-client5, .icon-client6 {
-  margin: 16px 32px;
-  fill:#AFB1B8;
-}
-
-/* .icon-client1:hover, .icon-client1:focus {
-  fill: #2196F3;
-} */
-
-/* .item-clients:hover {
-  fill: #2196F3;
-}
-
-.link-clients:hover {
-  fill:#2196F3
-} */
-
-/* .item.link-clients:hover {
-  color:#2196F3;
-} */
 
 /* Футер - общий для всех! */
 .footer {
@@ -509,6 +506,22 @@ address {
 
 .join-social {
   padding-top: 12px;
+}
+
+.link-social-footer {
+  text-decoration: none;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  fill:#FFFFFF;
+}
+
+.link-social-footer:hover, .link-social-footer:focus {
+  background: var(--hoverfocus-text-color);
 }
 
 /* Страница 2 - Портфолио */
